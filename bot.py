@@ -11,7 +11,7 @@ TELEGRAM_TOKEN = "7796882295:AAGmhLjduszWUQ0war7tNjFmblWyVKMVlXU"
 # Hàm để gọi OpenAI API và nhận phản hồi
 def get_gpt_response(question):
     response = openai.Completion.create(
-        engine="gpt-3.5-turbo",  # Hoặc GPT-4 nếu bạn sử dụng GPT-4
+        engine="gpt-4o-mini",  # Hoặc GPT-4 nếu bạn sử dụng GPT-4
         prompt=question,
         max_tokens=150
     )
